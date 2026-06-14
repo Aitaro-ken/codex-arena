@@ -1,0 +1,17 @@
+rounds: 30
+tasks_dir: tasks/
+clean_samples_per_round: 1      # number of clean (unmodified) samples mixed into each round's pool
+
+codex:
+  timeout_sec: 300
+  attempts_per_trial: 1         # LLM calls per attacker/defender turn (interpretable quantity)
+
+memory:
+  max_items: 20                 # set to 0 for no-memory ablation experiment
+
+sandbox:
+  use_docker: true
+  cpu_sec: 30
+  mem_mb: 512
+
+seeds: [1, 2, 3]               # multiple seeds → report variance, not just mean

@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.venv/
+venv/
+
+# Environment (may contain CODEX_BIN path or secrets — never commit)
+.env
+
+# Experiment output (large; regenerate with run_arena.py)
+runs/
+
+# Test caches
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+
+# Local tooling settings
+.claude/
